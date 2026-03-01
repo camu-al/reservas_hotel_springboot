@@ -102,12 +102,27 @@ Cambiar la URL base si tu proyecto corre en otro puerto (por defecto `http://loc
 
 ## Base de datos de ejemplo
 
-INSERT INTO cliente (id, nombre, email) VALUES (1, 'Juan', 'juan@gmail.com');  
-INSERT INTO reserva (id, id_cliente, fecha_entrada, fecha_salida, precio_total, confirmada)  
-VALUES (1, 1, '2026-03-20', '2026-03-23', 100, false),  
-       (2, 1, '2026-03-25', '2026-03-28', 150, false),  
-       (3, 1, '2026-04-01', '2026-04-05', 200, false);
+Se incluye un archivo `data.sql` con los inserts para clientes y reservas de ejemplo.
 
----
+Archivo `data.sql`:
+
+```sql
+-- Clientes
+INSERT INTO cliente (nombre, email) VALUES ('Juan Perez', 'juan@gmail.com');
+INSERT INTO cliente (nombre, email) VALUES ('Maria Lopez', 'maria@gmail.com');
+INSERT INTO cliente (nombre, email) VALUES ('Carlos Ruiz', 'carlos@gmail.com');
+
+-- Reservas
+INSERT INTO reserva (fecha_entrada, fecha_salida, precio_total, confirmada, id_cliente)
+VALUES ('2026-03-10', '2026-03-15', 150, true, 1);
+
+INSERT INTO reserva (fecha_entrada, fecha_salida, precio_total, confirmada, id_cliente)
+VALUES ('2026-03-20', '2026-03-22', 100, false, 1);
+
+INSERT INTO reserva (fecha_entrada, fecha_salida, precio_total, confirmada, id_cliente)
+VALUES ('2026-04-01', '2026-04-05', 200, true, 2);
+
+INSERT INTO reserva (fecha_entrada, fecha_salida, precio_total, confirmada, id_cliente)
+VALUES ('2026-03-12', '2026-03-16', 120, false, 3);
 
 Alex Camuñas Martínez
