@@ -1,0 +1,170 @@
+{
+  "info": {
+    "_postman_id": "4ecd1654-4c5a-49c8-8dbc-fb6d9d55ec32",
+    "name": "Hoteles_Clientes_Reservas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45023591",
+    "_collection_link": "https://go.postman.co/collection/45023591-4ecd1654-4c5a-49c8-8dbc-fb6d9d55ec32?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "registrarReserva",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"fechaEntrada\": \"2026-03-25\",\r\n    \"fechaSalida\": \"2026-03-28\",\r\n    \"precioTotal\": 120,\r\n    \"email\": \"alex@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/reservas/registrar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "reservas",
+            "registrar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "eliminarReserva",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/reservas/eliminar/1\n",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "reservas",
+            "eliminar",
+            "1\n"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "precioTotal",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/reservas/conteo?email=juan@gmail.com",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "reservas",
+            "conteo"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "juan@gmail.com"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listarPorFecha",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/reservas/fecha?fecha=2026-03-28",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "reservas",
+            "fecha"
+          ],
+          "query": [
+            {
+              "key": "fecha",
+              "value": "2026-03-28"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "resumen",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/reservas/resumen",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "reservas",
+            "resumen"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "modificarReserva",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "",
+            "value": "",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"fechaEntrada\": \"2026-03-25\",\r\n    \"fechaSalida\": \"2026-03-28\",\r\n    \"precioTotal\": 155,\r\n    \"email\": \"juan@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/reservas/modificar/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "reservas",
+            "modificar",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
