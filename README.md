@@ -19,10 +19,9 @@ Proyecto Spring Boot para la gestión de reservas de hoteles. Permite registrar,
 ## Configuración
 
 ### 1. Clonar el repositorio
-
+```bash
 git clone https://github.com/camu-al/ReservaHotels.git  
-cd ReservaHotels
-
+```
 ### 2. Configuración para el acceso a la Base de Datos
 
 spring.jpa.show-sql=true  
