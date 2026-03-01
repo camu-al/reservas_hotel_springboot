@@ -1,4 +1,4 @@
-# ReservaHotels
+# ReservaHotels - Alex Camuñas Martínez
 
 Proyecto Spring Boot para la gestión de reservas de hoteles. Permite registrar, modificar y eliminar reservas, así como consultar resúmenes y precios totales de clientes.
 
@@ -124,5 +124,3 @@ VALUES ('2026-04-01', '2026-04-05', 200, true, 2);
 
 INSERT INTO reserva (fecha_entrada, fecha_salida, precio_total, confirmada, id_cliente)
 VALUES ('2026-03-12', '2026-03-16', 120, false, 3);
-
-Alex Camuñas Martínez
