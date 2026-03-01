@@ -24,13 +24,13 @@ Permite registrar, modificar y eliminar reservas, así como consultar resúmenes
 git clone https://github.com/camu-al/ReservaHotels.git
 
 ## 2. Configuración para el acceso a la Base de Datos
-# Mostrar consultas SQL por consola
+Mostrar consultas SQL por consola
 spring.jpa.show-sql=true
 
-# Actualizar esquema de BD automáticamente
+Actualizar esquema de BD automáticamente
 spring.jpa.hibernate.ddl-auto=update
 
-# Datos de conexión con MySQL
+Datos de conexión con MySQL
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost/reserva_hotels
 spring.datasource.username=root
