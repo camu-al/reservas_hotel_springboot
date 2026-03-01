@@ -19,13 +19,11 @@ Permite registrar, modificar y eliminar reservas, así como consultar resúmenes
 
 ## Configuración
 
-1. **Clonar el repositorio**
+## 1. Clonar el repositorio
 
 git clone https://github.com/camu-al/ReservaHotels.git
 
-2. **Configurar la base de datos en application.properties:
-
-# Configuración para el acceso a la Base de Datos
+# 2. Configuración para el acceso a la Base de Datos
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 
