@@ -41,6 +41,7 @@ Maven:  `mvn spring-boot:run`
 ### 4. Dependencias importantes (pom.xml)
 
 <!-- Validación de DTOs -->
+```bash
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-validation</artifactId>
@@ -52,7 +53,7 @@ Maven:  `mvn spring-boot:run`
     <artifactId>modelmapper</artifactId>
     <version>3.0.0</version>
 </dependency>
-
+```
 ---
 
 ## Endpoints
