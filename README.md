@@ -28,7 +28,6 @@ cd ReservaHotels
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 
-# Datos de conexión con la base de datos MySQL
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost/reserva_hotels
 spring.datasource.username=root
