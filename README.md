@@ -24,7 +24,7 @@ git clone https://github.com/camu-al/ReservaHotels.git
 cd ReservaHotels 
 ```
 ### 2. Configuración para el acceso a la Base de Datos (MySQL)
-
+```java
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 
@@ -32,7 +32,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost/reserva_hotels
 spring.datasource.username=root
 spring.datasource.password=
-
+```
 ### 3. Ejecutar la aplicación (IntelliJ o Maven)
 
 - IntelliJ, ejecuta la clase `com.alcama.reservahotels.App`
