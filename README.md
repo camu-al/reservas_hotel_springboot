@@ -62,11 +62,11 @@ Todos los endpoints están bajo `/reservas`
 | Método | URL                                | Body | Descripción                                      |
 | ------ | ---------------------------------- | ---- | ------------------------------------------------ |
 | POST   | `/reservas/registrar`              | JSON | Registrar nueva reserva                          |
-| PUT    | `/reservas/modificar/{email}`      | JSON | Modificar reserva existente de un cliente       |
-| DELETE | `/reservas/eliminar/{email}`       | -    | Eliminar todas las reservas de un cliente       |
-| GET    | `/reservas/conteo?email=correo`    | -    | Suma del precio total de reservas de un cliente |
-| GET    | `/reservas/fecha?fecha=YYYY-MM-DD` | -    | Listar reservas desde una fecha                 |
-| GET    | `/reservas/resumen`                | -    | Resumen de reservas confirmadas y no confirmadas|
+| PUT    | `/reservas/modificar/{email}`      | JSON | Modificar reserva existente de un cliente        |
+| DELETE | `/reservas/eliminar/{email}`       | -    | Eliminar todas las reservas de un cliente        |
+| GET    | `/reservas/conteo?email=correo`    | -    | Suma del precio total de reservas de un cliente  |
+| GET    | `/reservas/fecha?fecha=YYYY-MM-DD` | -    | Listar reservas desde una fecha                  |
+| GET    | `/reservas/resumen`                | -    | Resumen de reservas confirmadas y no confirmadas |
 
 ---
 
@@ -74,18 +74,18 @@ Todos los endpoints están bajo `/reservas`
 
 Registrar reserva:  
 {  
-        "fechaEntrada": "2026-03-25",  
-        "fechaSalida": "2026-03-28",  
-        "precioTotal": 150,  
-        "email": "juan@gmail.com"  
+    "fechaEntrada": "2026-03-25",  
+    "fechaSalida": "2026-03-28",  
+    "precioTotal": 150,  
+    "email": "juan@gmail.com"  
 }  
 
 Modificar reserva:  
 {  
-        "fechaEntrada": "2026-04-01",  
-        "fechaSalida": "2026-04-05",  
-        "precioTotal": 200,  
-        "email": "juan@gmail.com"  
+    "fechaEntrada": "2026-04-01",  
+    "fechaSalida": "2026-04-05",  
+    "precioTotal": 200,  
+    "email": "juan@gmail.com"  
 }  
 
 ---
