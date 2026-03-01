@@ -23,7 +23,7 @@ Proyecto Spring Boot para la gestión de reservas de hoteles. Permite registrar,
 git clone https://github.com/camu-al/ReservaHotels.git
 cd ReservaHotels 
 ```
-### 2. Configuración para el acceso a la Base de Datos
+### 2. Configuración para el acceso a la Base de Datos (MySQL)
 
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
