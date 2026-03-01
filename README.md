@@ -41,7 +41,7 @@ spring.datasource.password=
 ### 4. Dependencias importantes (pom.xml)
 
 
-```bash
+```java
 <!-- Validación de DTOs -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
