@@ -20,37 +20,39 @@ Proyecto Spring Boot para la gestión de reservas de hoteles. Permite registrar,
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/camu-al/ReservaHotels.git  
+git clone https://github.com/camu-al/ReservaHotels.git
+cd ReservaHotels 
 ```
 ### 2. Configuración para el acceso a la Base de Datos
 
-spring.jpa.show-sql=true  
-spring.jpa.hibernate.ddl-auto=update  
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver  
-spring.datasource.url=jdbc:mysql://localhost/reserva_hotels  
-spring.datasource.username=root  
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+# Datos de conexión con la base de datos MySQL
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost/reserva_hotels
+spring.datasource.username=root
 spring.datasource.password=
 
-### 3. Ejecutar la aplicación
+### 3. Ejecutar la aplicación (IntelliJ o Maven)
 
-Desde IntelliJ, ejecuta la clase `com.alcama.reservahotels.App` o usando Maven:  
-
-mvn spring-boot:run
+IntelliJ, ejecuta la clase `com.alcama.reservahotels.App`
+Maven:  `mvn spring-boot:run`
 
 ### 4. Dependencias importantes (pom.xml)
 
-Validación de DTOs:  
-<dependency>  
-    <groupId>org.springframework.boot</groupId>  
-    <artifactId>spring-boot-starter-validation</artifactId>  
-</dependency>  
+<!-- Validación de DTOs -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
 
-ModelMapper:  
-<dependency>  
-    <groupId>org.modelmapper</groupId>  
-    <artifactId>modelmapper</artifactId>  
-    <version>3.0.0</version>  
-</dependency>  
+<!-- ModelMapper -->
+<dependency>
+    <groupId>org.modelmapper</groupId>
+    <artifactId>modelmapper</artifactId>
+    <version>3.0.0</version>
+</dependency>
 
 ---
 
@@ -72,30 +74,20 @@ Todos los endpoints están bajo `/reservas`
 ## Ejemplos de Requests (JSON)
 
 Registrar reserva:  
-{  
-    "fechaEntrada": "2026-03-25",  
-    "fechaSalida": "2026-03-28",  
-    "precioTotal": 150,  
-    "email": "juan@gmail.com"  
-}  
+{
+  "fechaEntrada": "2026-03-25",
+  "fechaSalida": "2026-03-28",
+  "precioTotal": 150,
+  "email": "juan@gmail.com"
+}
 
 Modificar reserva:  
-{  
-    "fechaEntrada": "2026-04-01",  
-    "fechaSalida": "2026-04-05",  
-    "precioTotal": 200,  
-    "email": "juan@gmail.com"  
-}  
-
----
-
-## Postman
-
-La colección de Postman se encuentra en `postman/ReservaHotels.postman_collection.json`  
-
-Importarla en Postman: Abrir Postman → File → Import → Upload Files → seleccionar el archivo  
-
-Cambiar la URL base si tu proyecto corre en otro puerto (por defecto `http://localhost:8080`).
+{
+  "fechaEntrada": "2026-04-01",
+  "fechaSalida": "2026-04-05",
+  "precioTotal": 200,
+  "email": "juan@gmail.com"
+}
 
 ---
 
@@ -124,4 +116,15 @@ VALUES ('2026-04-01', '2026-04-05', 200, true, 2);
 INSERT INTO reserva (fecha_entrada, fecha_salida, precio_total, confirmada, id_cliente)
 VALUES ('2026-03-12', '2026-03-16', 120, false, 3);
 ```
+
+## Postman
+
+La colección de Postman se encuentra en `postman/ReservaHotels.postman_collection.json`  
+
+Importarla en Postman: Abrir Postman → File → Import → Upload Files → seleccionar el archivo  
+
+Cambiar la URL base si tu proyecto corre en otro puerto (por defecto `http://localhost:8080`).
+
+---
+
 ## Alex Camuñas Martínez
