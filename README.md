@@ -40,8 +40,9 @@ Maven:  `mvn spring-boot:run`
 
 ### 4. Dependencias importantes (pom.xml)
 
-<!-- Validación de DTOs -->
+
 ```bash
+<!-- Validación de DTOs -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-validation</artifactId>
@@ -74,6 +75,7 @@ Todos los endpoints están bajo `/reservas`
 ## Ejemplos de Requests (JSON)
 
 Registrar reserva:  
+```json
 {
   "fechaEntrada": "2026-03-25",
   "fechaSalida": "2026-03-28",
@@ -88,7 +90,7 @@ Modificar reserva:
   "precioTotal": 200,
   "email": "juan@gmail.com"
 }
-
+```
 ---
 
 ## Base de datos de ejemplo
