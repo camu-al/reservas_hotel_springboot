@@ -74,18 +74,18 @@ Todos los endpoints están bajo `/reservas`
 
 Registrar reserva:  
 {  
-    "fechaEntrada": "2026-03-25",  
-    "fechaSalida": "2026-03-28",  
-    "precioTotal": 150,  
-    "email": "juan@gmail.com"  
+        "fechaEntrada": "2026-03-25",  
+        "fechaSalida": "2026-03-28",  
+        "precioTotal": 150,  
+        "email": "juan@gmail.com"  
 }  
 
 Modificar reserva:  
 {  
-    "fechaEntrada": "2026-04-01",  
-    "fechaSalida": "2026-04-05",  
-    "precioTotal": 200,  
-    "email": "juan@gmail.com"  
+        "fechaEntrada": "2026-04-01",  
+        "fechaSalida": "2026-04-05",  
+        "precioTotal": 200,  
+        "email": "juan@gmail.com"  
 }  
 
 ---
