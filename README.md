@@ -22,7 +22,7 @@ Permite registrar, modificar y eliminar reservas, así como consultar resúmenes
 1. **Clonar el repositorio**
 
 bash
-git clone https://github.com/tu-usuario/ReservaHotels.git
+git clone https://github.com/camu-al/ReservaHotels.git
 cd ReservaHotels
 
 Configurar la base de datos en application.properties:
