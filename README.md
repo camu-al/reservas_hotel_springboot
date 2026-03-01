@@ -35,8 +35,8 @@ spring.datasource.password=
 
 ### 3. Ejecutar la aplicación (IntelliJ o Maven)
 
-IntelliJ, ejecuta la clase `com.alcama.reservahotels.App`
-Maven:  `mvn spring-boot:run`
+- IntelliJ, ejecuta la clase `com.alcama.reservahotels.App`
+- Maven:  `mvn spring-boot:run`
 
 ### 4. Dependencias importantes (pom.xml)
 
@@ -82,8 +82,10 @@ Registrar reserva:
   "precioTotal": 150,
   "email": "juan@gmail.com"
 }
+```
 
 Modificar reserva:  
+```json
 {
   "fechaEntrada": "2026-04-01",
   "fechaSalida": "2026-04-05",
